@@ -1,0 +1,84 @@
+#+STARTUP: showall
+
+
+* Instructions for systematic reviews within the SIM research program
+
+All systematic reviews should be registered in PROSPERO and a protocol based on PROSPERO items should be included. 
+required for registration 
+
+1. Clearly define the research question. This typically includes deciding on the antecedent and consequent, e.g. alcohol consumption -> cancers.
+
+
+2. Clearly define the estimand(s) of interest, e.g. relative risk of cancer given exposure to grams of alcohol consumed per week.
+
+
+3. Define inclusion and exclusion criteria:
+   - Language
+   - Study types, which will likely be all quantitative study types excluding case studies.
+   - Specific populations that should be included or excluded (age, riskfactors, etc.)
+   - Settings (may want to exclude overly specific settings)
+
+
+4. Decide on data that should be extracted, e.g. population characteristics, risk estimates, etc.
+   - Create a form that can be used to extract data
+
+
+5. Keywords - use SIM program standards
+
+
+6. Sources:
+   - PubMed
+   - Cochrane Central Register of Controlled Trials (CENTRAL)
+   - Cochrane Database of Systematic Reviews (CDSR) 
+   - Web of Science
+   - Scopus
+   - PsycArticles and PsycInfo
+
+
+6. Search all databases:
+   - Create one file for each database (in .bibtex format)
+   - Create one combined file for all datasets with duplicates removed using Zotero (in .bibtex format)
+   - Note when the search was made for each database and the number of reports found per database.
+
+
+7. At least two persons screens all titles and abstracts independently of one another.
+   - Create one file of pruned articles with each person's results (in .bibtex format)
+   - Create a combined file of pruned articles with duplicates removed (in .bibtex format)
+
+
+8. At least two persons reads all full-text articles and decides which to include
+   - Create one file with articles kept per person reading full-text (in .bibtext format)
+   - Create one file with all articles combined with final decision (in .bibtext format)
+   - Make notes of exclusion reason at this stage
+   - Make notes of any discussions about inclusion of reports at this stage (disagreements)
+   - Find an arbiter if no consensus can be found.
+
+
+9. At least two persons use the previously created form to extract data from each paper.
+   - Compare and discuss differences (make note of any differences)
+   - Contact authors if necessary.
+   - Find an arbiter if no consensus can be found.
+
+
+10. Create a flow chart for the selection process.
+
+
+11. At least two persons independently assesses the risk of bias using ROBINS or ROB (if RCT).
+    - Comment on all judgements and store a file per person
+    - Combine judgements and make note of any discussions regarding disagreements
+    - Creat risk of bias matrices/tables
+
+12. Create a summary table showing the characteristics of the studyies.
+
+13. Create a summary table which shows the quantitative estimates of the estimands.
+
+14. If suitable, conduct a meta-analysis.
+
+15. Assess publication bias using funnel-plots (if enough reports)
+
+16. Use GRADE to assess overal quality of evidence for each estimand.
+
+
+     
+     
+   
