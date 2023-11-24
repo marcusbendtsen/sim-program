@@ -1,0 +1,183 @@
+<!doctype html>
+
+<html lang="en" data-bs-theme="dark">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The SIM research program</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+  </head>
+  
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+	<a class="navbar-brand" href="#">SIMLAR</a>
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse">
+
+	  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	    <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reviews.html">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="instructions.html">Instructions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="queries.html">Queries</a>
+            </li>
+            <!-- <li class="nav-item"> -->
+              <!--   <a class="nav-link" href="flow.html">Flow diagrams</a> -->
+              <!-- </li> -->
+	  </ul>
+	  
+	</div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+	<div class="col p-4">
+
+	  <div class="p-5 bg-body-tertiary border rounded-3">
+
+		<h1>Instructions</h1>
+
+		<p>
+		  All systematic reviews should be registered in PROSPERO and a protocol based on PROSPERO items should be deposited in the sim-program GitHub repository prior to review commencement.
+		</p>
+
+		<h2>Planning and piloting stage</h2>
+		<ol>
+
+		  <li>Clearly define the research question. This typically includes deciding on the antecedent and consequent, e.g., alcohol consumption &rarr; liver cancer.</li>
+
+		  <li>Clearly define the estimand(s) of interest, e.g., relative risk of liver cancer given exposure to grams of alcohol consumed per week.</li>
+
+		  <li> Define inclusion and exclusion criteria:
+		    <ul>
+		      <li>Language of published reports.</li>
+		      <li>Study types, likely to be all quantitative study types excluding case studies.</li>
+		      <li>Specific populations that should be included or excluded (age, riskfactors, etc.).</li>
+		      <li>Settings (may want to exclude overly specific settings which may induce selction bias).</li>
+		    </ul>
+		  </li>
+
+		  <li>Decide on the data that should be extracted, e.g., population characteristics, risk estimates, etc.</li>
+
+		  <li>Create a form that can be used to store extracted data and upload to the sim-program GitHub repository.</li>
+
+		  <li>Select keyword blocks from the SIM program's pre-specified queries.</li>
+
+		  <li>Select sources that should be searched. The following should always be included:
+		    <ul>
+		      <li>PubMed</li>
+		      <li>Cochrane Central Register of Controlled Trials (CENTRAL)</li>
+		      <li>Cochrane Database of Systematic Reviews (CDSR)</li>
+		      <li>Web of Science</li>
+		      <li>Scopus</li>
+		      <li>PsycArticles</li>
+		      <li>PsycInfo</li>
+		    </ul>
+		  </li>
+
+		</ol>
+
+		<h2>Intermediate stage</h2>
+		<p>
+		  If a systematic review is found during planning and piloting that is recent and acceptably answers the planned research question, then stop here and consider if a systematic review is necessary at this time or not.
+		</p>
+
+		<h2>Execution stage</h2>
+
+		<ol>
+		  <li>Get a team together consisting of at least 3 people (including the lead).</li>
+		  
+		  <li>Search all databases:
+		    <ul>
+		      <li>Create one file for each database (in .bibtex format) and add to sim-prorgram GitHub repository.</li>
+		      <li>Create one combined file for all datasets with duplicates removed using Zotero (in .bibtex format) and add to sim-program GitHub repository.</li>
+		    </ul>
+		  </li>
+
+		  <li>At least two team members screens all titles and abstracts independently of one another.
+		    <ul>
+		      <li>Create one file of pruned articles with each person's results (in .bibtex format) and add to sim-program GitHub repository.</li>
+		      <li>Create a combined file of pruned articles with duplicates removed (in .bibtex format) and add to sim-program GitHub repository.</li>
+		    </ul>
+		  </li>
+
+		  <li>At least two team members reads all full-text articles and decides which to include.
+		    <ul>
+		      <li>Create one file with articles kept per person reading full-text (in .bibtext format) and add to sim-program GitHub repository.</li>
+		      <li>Create one file with all articles combined with final decision (in .bibtext format) and add to sim-program GitHub repository.</li>
+		      <li>Make notes of exclusion reason at this stage.</li>
+		      <li>Make notes of any discussions about inclusion of reports at this stage (disagreements).</li>
+		      <li>Find an arbiter if no consensus can be found.</li>
+		    </ul>
+		  </li>
+		</ol>
+
+		<h2>Synthesis and bias assessment</h2>
+		<ol>
+		  <li>At least two team members use the previously created form to extract data from each report.
+		    <ul>
+		      <li>Compare and discuss differences.</li>
+		      <li>Contact authors if necessary.</li>
+		      <li>Find an arbiter if no consensus can be found.</li>
+		      <li>Make notes of any differences, disagreements, requests from authors, and use of arbiter. Add notes to repository.</li>
+		    </ul>
+		  </li>
+
+		  <li>Create a flow chart for the selection process.</li>
+
+		  <li>At least two team members independently assesses the risk of bias using ROBINS or ROB (if RCT).
+		    <ul>
+		      <li>Comment on all judgements and add a file per person to the repository.</li>
+		      <li>Combine judgements and make note of any discussions regarding disagreements.</li>
+		      <li>Find an arbiter if no consensus can be found.</li>
+		      <li>Make notes of any differences, disagreements, requests from authors, and use of arbiter. Add notes to repository.</li>
+		    </ul>
+		  </li>
+
+		  <li>Creat risk of bias matrices/tables.</li>
+
+		  <li>Create a summary table showing the characteristics of the studies.</li>
+
+		  <li>Create a summary table which shows the quantitative estimates of the estimands.</li>
+
+		  <li>If suitable, conduct a meta-analysis.</li>
+
+		  <li>Assess publication bias using funnel-plots.</li>
+
+		  <li>Use GRADE to assess overall quality of evidence for each estimand.</li>
+
+		  
+		</ol>
+		
+
+	  </div> <!-- Box -->
+	  
+	</div> <!-- Col -->
+	
+      </div> <!-- Row -->
+
+    </div> <!-- Container -->
+
+
+  </body>
+
+</html>

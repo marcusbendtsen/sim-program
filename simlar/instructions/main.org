@@ -3,14 +3,11 @@
 
 * Instructions for systematic reviews within the SIM research program
 
-All systematic reviews should be registered in PROSPERO and a protocol based on PROSPERO items should be included. 
-required for registration 
+All systematic reviews should be registered in PROSPERO and a protocol based on PROSPERO items should be deposited in the sim-program github repository.
 
 1. Clearly define the research question. This typically includes deciding on the antecedent and consequent, e.g. alcohol consumption -> cancers.
 
-
 2. Clearly define the estimand(s) of interest, e.g. relative risk of cancer given exposure to grams of alcohol consumed per week.
-
 
 3. Define inclusion and exclusion criteria:
    - Language
@@ -34,7 +31,7 @@ required for registration
    - Scopus
    - PsycArticles and PsycInfo
 
-
+     
 6. Search all databases:
    - Create one file for each database (in .bibtex format)
    - Create one combined file for all datasets with duplicates removed using Zotero (in .bibtex format)
