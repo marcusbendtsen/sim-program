@@ -1,0 +1,10 @@
+
+#1 depression OR depressed
+
+#2 "major depression disorder" OR "major depression disorders" OR "depressive disorders"
+
+#3 "negative affect"
+
+#4 #1 OR #2 OR #3
+
+

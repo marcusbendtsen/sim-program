@@ -1,0 +1,16 @@
+
+#1 "eating disorder" OR "eating disorders"
+
+#2 anorexia OR "anorexia nervosa"
+
+#3 bulimia OR "bulimia nervosa" OR "binge eating"
+
+#4 arfid OR "avoidant restrictive food intake"
+
+#5 osfed OR "other specified feeding and eating disorder"
+
+#6 pica
+
+#7 "rumination disorder" OR "rumination disorders"
+
+#8 #1 OR #2 OR #3 OR #4 OR #5 OR #6 OR #7

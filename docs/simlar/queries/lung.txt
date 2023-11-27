@@ -1,0 +1,7 @@
+#1 "lung disease" OR “pulmonary” OR "respiratory disease" OR "respiratory distress" OR "respiratory failure"
+
+#2 bronchitis OR asthma
+
+#3 lung OR "lung function"
+
+#4 #1 OR #2 OR #3

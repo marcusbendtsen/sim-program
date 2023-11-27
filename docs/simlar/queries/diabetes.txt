@@ -1,0 +1,5 @@
+#1 diabetes OR diabetic
+
+#2 "diabetes mellitus"
+
+#3 #1 OR #2

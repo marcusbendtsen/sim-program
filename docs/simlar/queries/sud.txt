@@ -1,0 +1,17 @@
+
+#1 substance
+
+#2 alcohol
+
+#3 amphetamine OR cocaine OR marijuana OR heroin
+
+#4 "prescription medic" OR "prescription medics"
+
+#5 opiod OR opiods OR opiate OR opiates
+
+#6 fentanyl
+
+#7 "use disorder" OR "use disorders" OR "abuse"
+
+#8 (#1 OR #2 OR #3 OR #4 OR #5 OR #6) AND #7
+

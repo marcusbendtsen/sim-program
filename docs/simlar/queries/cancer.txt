@@ -1,1 +1,21 @@
-test cancer query
+#1 colon OR colorectal OR rectal
+
+#2 bladder
+
+#3 stomach OR gastric OR esophageal
+
+#4 breast OR endometrial OR ovarian
+
+#5 prostate
+
+#6 pancreatic
+
+#7 lung
+
+#8 skin 
+
+#9 cancer
+
+#10 "squamous cell carcinoma"
+
+#11 ((#1 OR #2 OR #3 OR #4 OR #5 OR #6 OR #7 OR #8) AND #9) OR #10

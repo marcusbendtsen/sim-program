@@ -1,1 +1,19 @@
-test diet query
+#1 diet OR dietary OR "dietary habit" OR "dietary pattern"
+
+#2 eating OR food
+
+#3 "healthy eating" OR "healthy diet"
+
+#4 "energy intake"
+
+#5 nutrition OR "nutrient intake"
+
+#6 fruit OR fruits
+
+#7 vegetable OR vegetables OR greens
+
+#8 supplement
+
+#9 #1 OR #2 OR #3 OR #4 OR #5 OR #6 OR #7 OR #8
+
+

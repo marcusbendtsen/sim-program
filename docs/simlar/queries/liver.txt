@@ -1,0 +1,7 @@
+#1 "liver disease" OR "liver cirrhosis"
+
+#2 steatohepatitis OR "fatty liver"
+
+#3 hepatic OR "hepatic steatosis" OR "hepatocellular carcinoma"
+
+#4 #1 OR #2 OR #3

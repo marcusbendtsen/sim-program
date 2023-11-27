@@ -1,0 +1,8 @@
+
+#1 anxiety OR anxious
+
+#2 "general anxiety disorder" OR "general anxiety disorders"
+
+#3 "negative affect"
+
+#4 #1 OR #2 OR #3

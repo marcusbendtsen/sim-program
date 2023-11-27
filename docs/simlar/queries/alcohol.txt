@@ -1,1 +1,13 @@
-test alcohol query
+#1 "harmful drinking" OR "harmful drinkers" OR "harmful drinker"
+
+#2 "risky drinking" OR "risky drinkers" OR "risky drinker"
+
+#3 "hazardous drinking" OR "hazardous drinkers" OR "hazardous drinker"
+
+#4 "heavy episodic drinking" OR "heavy episodic drinkers" OR "heavy episodic drinker"
+
+#5 alcohol
+
+#6 #1 OR #2 OR #3 OR #4 OR #5
+
+

@@ -1,1 +1,14 @@
-test pa query
+
+#1 "physical activity" 
+
+#2 exercise OR workout OR training OR sport OR walking OR gym OR recreation OR game OR pastime
+
+#2 sedentary OR "sedentary behavior" OR "sedentary behaviour" OR "physical inactivity"
+
+#3 #1 OR #2 OR #3
+
+
+
+
+
+
