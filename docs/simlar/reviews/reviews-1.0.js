@@ -130,7 +130,7 @@ const reviews = [
 	"antecedent" : "alcohol_others",
 	"consequent" : "sud",
 	"prospero" : "",
-	"lead" : "",
+	"lead" : "Gillian W. Shorter",
 	"contributors" : "",
 	"publications" : ""
     },
