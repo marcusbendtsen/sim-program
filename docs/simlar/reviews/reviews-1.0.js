@@ -88,10 +88,10 @@ const reviews = [
 	"antecedent" : "alcohol",
 	"consequent" : "ed",
 	"prospero" : "",
-	"lead" : "",
+	"lead" : "Elizabeth S. Collier",
 	"contributors" : "",
 	"publications" : "",
-	"status" : "prioritized"
+	"status" : "ongoing"
     },
     {
 	"antecedent" : "alcohol",
@@ -578,10 +578,10 @@ const reviews = [
 	"antecedent" : "ed",
 	"consequent" : "alcohol",
 	"prospero" : "",
-	"lead" : "",
+	"lead" : "Elizabeth S. Collier",
 	"contributors" : "",
 	"publications" : "",
-	"status" : "prioritized"
+	"status" : "ongoing"
     },
     {
 	"antecedent" : "sud",
@@ -729,10 +729,10 @@ const reviews = [
 	"antecedent" : "ed",
 	"consequent" : "diet",
 	"prospero" : "",
-	"lead" : "",
+	"lead" : "Elizabeth S. Collier",
 	"contributors" : "",
 	"publications" : "",
-	"status" : "prioritized"
+	"status" : "ongoing"
     },
     {
 	"antecedent" : "sud",
