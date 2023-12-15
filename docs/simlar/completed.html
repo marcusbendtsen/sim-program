@@ -27,23 +27,14 @@
 
     <script>
 
-      function create_ongoing(container, review) {
-	  $(container).append(create_title(review));
-	  $(container).append(create_estimands(review));
+      function create_completed(container, review) {      
+	  $(container).append(create_title(review));      
 	  $(container).append(create_prospero(review));
 	  $(container).append(create_lead(review));
 	  $(container).append(create_contributors(review));
-	  $("#review-items-ongoing").append(container);
-      }
-
-      function create_prioritized(container, review) {
-	  $(container).append(create_title(review));
-	  $("#review-items-prioritized").append(container);
-      }
-
-      function create_planned(container, review) {
-	  $(container).append(create_title(review));
-	  $("#review-items-planned").append(container);
+	  $(container).append(create_publications(review));
+	  $(container).append(create_existing(review));
+	  $("#review-items-completed").append(container);
       }
 
       function create_title(review) {
@@ -62,24 +53,39 @@
       function create_contributors(review) {
 	  return $("<p>").html("<strong>Contributors:</strong> " + review["contributors"]);
       }
-
-      function create_estimands(review) {
-	  const div = $("<div><strong>Estimands:</strong></div>");
-	  const estimands = $("<ul>");
-	  if ("estimands" in review) {
-	      for (e in review["estimands"]) {
-		  const est = review["estimands"][e]
-		  const est_p = $("<p>").html(est);
-		  const est_item = $("<li>").append(est_p);
-		  $(estimands).append(est_item);
+      
+      function create_publications(review) {
+	  const div = $("<div><strong>Publications:</strong></div>");
+	  const pubs = $("<ul>");
+	  if ("publications" in review) {
+	      for (p in review["publications"]) {
+		  const pub = review["publications"][p]
+		  const pub_link = $("<a target=_blank>").attr("href", pub["href"]).html(pub["label"]);
+		  const pub_item = $("<li>").append(pub_link);
+		  $(pubs).append(pub_item);
 
 	      }
-	      $(div).append(estimands);
+	      $(div).append(pubs);
 	      return div;
 	  }
       }
 
-      
+      function create_existing(review) {
+	  const div = $("<div><strong>Existing:</strong></div>");
+	  const pubs = $("<ul>");
+	  if ("existing" in review) {
+	      for (p in review["existing"]) {
+		  const pub = review["existing"][p]
+		  const pub_link = $("<a target=_blank>").attr("href", pub["href"]).html(pub["label"]);
+		  const pub_item = $("<li>").append(pub_link);
+		  $(pubs).append(pub_item);
+	      }
+	      $(div).append(pubs);
+	      return div;
+	  }
+      }
+
+
       $(function() {
 	  
 	  for (r in reviews) {
@@ -91,13 +97,9 @@
 	      $(div).addClass("p-3").addClass("my-3");
 	      
  	      if ("status" in review) {
-		  if (review["status"] == "ongoing") {
-		      create_ongoing(div, review);
-		  } else if (review["status"] == "prioritized") {
-                      create_prioritized(div, review);
-                  }
-	      } else {
-		  create_planned(div, review);
+		  if (review["status"] == "completed") {
+		      create_completed(div, review);
+		  }
 	      }
 	      
 	  }
@@ -125,7 +127,7 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="reviews.html">Reviews</a>
+              <a class="nav-link" href="reviews.html">Reviews</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="instructions.html">Instructions</a>
@@ -134,7 +136,7 @@
               <a class="nav-link" href="queries.html">Queries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="completed.html">Completed</a>
+              <a class="nav-link active" href="completed.html">Completed</a>
             </li>
             <!-- <li class="nav-item"> -->
               <!--   <a class="nav-link" href="flow.html">Flow diagrams</a> -->
@@ -153,25 +155,13 @@
 	  
 	  <div class="p-5 bg-body-tertiary border rounded-3">
 
-	    <h1>Reviews</h1>
+	    <h1>Completed reviews</h1>
 
 	    <div class="review-category">
-	      <h2>Ongoing</h2>
-	      <div id="review-items-ongoing">
+	      <div id="review-items-completed">
 	      </div>
 	    </div>
 
-	    <div class="review-category">
-	      <h2>Prioritized</h2>
-	      <div id="review-items-prioritized">
-	      </div>
-	    </div>
-
-	    <div class="review-category">
-	      <h2>Planned</h2>
-	      <div id="review-items-planned">
-	      </div>
-	    </div>
 
 	  </div> <!-- Box -->
 	  
