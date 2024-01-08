@@ -32,13 +32,15 @@
     <div class="container-fluid">
 
       
-      <div class="px-4 py-5 mt-5">
+      <div class="px-4 py-2 mt-5">
 	<div class="col-lg-8">
 	  <h2 class="display-6 fw-bold text-body-emphasis text-left mx-auto">Population dynamics (SIMPOP)</h2>
 	  <p class="lead">
-	    In this project, we will use Swedish national registries to define the initial state of the
-	    virtual cohorts and estimate conditional probabilities of life course events. These life course events relate to
-	    household characteristics, education, employment, income trajectories, and sick leave.
+	    In this project, we will use Swedish national registries to define the initial state of the virtual cohorts and estimate conditional probabilities of life course events. 
+	    These life course events relate to household characteristics, education, employment, income trajectories, and sick leave.
+	  </p>
+	  <p class="lead">
+	    Here, "individual characteristics" is broadly defined as what is know about the individual, e.g. age, gender, education, current income, household characteristics, NCDs, MHCs, history of sick leave, etc.
 	  </p>
  	</div>
       </div> <!-- Header -->
@@ -50,7 +52,10 @@
             <h2>Household characteristics</h2>
 	    <h3>Estimands</h3>
 	    <ul>
-	      <li>...</li>
+	      <li>Annual probability of two adult individuals getting married/divorced, conditional on both individuals' characteristics.</li>
+	      <li>Annual probability of two adult individuals sharing a household, conditional on both individuals' characteristics.</li>
+	      <li>Annual probability of adding a child to the household, conditional on parent('s') characteristics.</li>
+	      <li>Annual probability of child leaving the household, conditional on parent('s') and child's characteristics.</li>
 	    </ul>
 	  </div>
 	</div>
@@ -60,7 +65,10 @@
             <h2>Education and employment</h2>
 	    <h3>Estimands</h3>
 	    <ul>
-	      <li>...</li>
+	      <li>Annual probability of obtaining an educational degree (primary, secondary, tertriary), conditional on the individual's and parents' characteristics. </li>
+	      <li>Annual probability of becoming unemployed conditional on the individual's characteristics.</li>
+	      <li>Annual probability of early- or disability pension conditional on the individual's characteristics.</li>
+	      <li>Annual probability of pension conditional on the individual's characteristics.</li>
 	    </ul>
 	  </div>
 	</div>
@@ -70,7 +78,7 @@
             <h2>Income trajectories</h2>
 	    <h3>Estimands</h3>
 	    <ul>
-	      <li>...</li>
+	      <li>Predicted lifetime income trajectory conditional on individual's characteristics.</li>
 	    </ul>
 	  </div>
 	</div>
@@ -80,7 +88,8 @@
             <h2>Sick leave and benefits</h2>
 	    <h3>Estimands</h3>
 	    <ul>
-	      <li>...</li>
+	      <li>Number of days of sickness and rehabilitation benefits conditional on specific NCD or MHC and the individual's other characteristics.</li>
+	      <li>Amount paid and case management costs conditional on specific NCD or MHC and the individual's other characteristics.</li>
 	    </ul>
 	  </div>
 	</div>
