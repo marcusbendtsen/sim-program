@@ -1,0 +1,28 @@
+
+.header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-text {
+    padding: 1em;
+    background: rgba(0,0,0,0.75);
+}
+
+.review-category h2 {
+    padding-bottom: 0.3em;
+    // padding-top: 1em;
+}
+
+.review-category .lead {
+    color: white;
+    font-weight: bold;
+}
+
+.query-category h2 {
+    padding-bottom: 0.3em;
+    // padding-top: 1em;
+}
+
+

@@ -11,16 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <style type="text/css">
-
-      .query-category h2 {
-	  border-bottom: 1px solid white;
-	  padding-bottom: 0.3em;
-	  padding-top: 1em;
-      }
-      
-    </style>
-
+    <link href="../resources/css/index.css" rel="stylesheet">
     
     <script type="text/javascript">
       
@@ -116,19 +107,26 @@
       </div>
     </nav>
 
+    <!-- Static Header -->
+    <div style="background-image: url(../resources/img/simlar-background.jpg)" class="jumbotron bg-cover text-white header">
+      <div class="py-5">
+	<div class="header-text">
+          <h1 class="display-4 font-weight-bold">Queries</h1>
+	</div>
+      </div>
+    </div>
+
     <div class="container-fluid">
       
       <div class="row">
 
-	<div class="col p-4">
+	<div class="col px-4">
 
-	  <div class="p-5 bg-body-tertiary border rounded-3">
-
-	    <h1>Queries</h1>
-
+	  <div class="p-5 bg-body-tertiary">
 
 	    <div class="query-category">
 	      <h2>Behavior</h2>
+	      <hr />
 	      <div class="border border-light rounded p-3 my-3">
 		<h3>Alcohol</h3>
 		<p id="alcohol"></p>
@@ -148,8 +146,9 @@
 	    </div> <!-- Query category behavior end -->
 
 
-	    <div class="query-category">
+	    <div class="query-category pt-5">
 	      <h2>Non-communicable diseases</h2>
+	      <hr />
 	      <div class="border border-light rounded p-3 my-3">
 		<h3>Cancers</h3>
 		<p id="cancer"></p>
@@ -173,8 +172,9 @@
 	    </div> <!-- Query category behavior end -->
 
 
-	    <div class="query-category">
+	    <div class="query-category pt-5">
 	      <h2>Mental health</h2>
+	      <hr />
 	      <div class="border border-light rounded p-3 my-3">
 		<h3>Anxiety (generalized anxiety disorder)</h3>
 		<p id="gad"></p>

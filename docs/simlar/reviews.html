@@ -11,19 +11,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+    <link href="../resources/css/index.css" rel="stylesheet">
+
     <script src="reviews/dictionary-1.0.js"></script>
     <script src="reviews/reviews-1.0.js"></script>
-
-    <style type="text/css">
-
-      .review-category h2 {
-	  border-bottom: 1px solid white;
-	  padding-bottom: 0.3em;
-	  padding-top: 1em;
-      }
-
-      
-    </style>
 
     <script>
 
@@ -145,30 +136,41 @@
       </div>
     </nav>
 
+    <!-- Static Header -->
+    <div style="background-image: url(../resources/img/simlar-background.jpg)" class="jumbotron bg-cover text-white header">
+      <div class="py-5">
+	<div class="header-text">
+          <h1 class="display-4 font-weight-bold">Ongoing and planned reviews</h1>
+	</div>
+      </div>
+    </div>
+
+
     <div class="container-fluid">
 
       <div class="row">
 
-	<div class="col p-4">
+	<div class="col px-4">
 	  
-	  <div class="p-5 bg-body-tertiary border rounded-3">
-
-	    <h1>Reviews</h1>
+	  <div class="p-5 bg-body-tertiary">
 
 	    <div class="review-category">
 	      <h2>Ongoing</h2>
+	      <hr />
 	      <div id="review-items-ongoing">
 	      </div>
 	    </div>
 
-	    <div class="review-category">
+	    <div class="review-category pt-5">
 	      <h2>Prioritized</h2>
+	      <hr />
 	      <div id="review-items-prioritized">
 	      </div>
 	    </div>
 
-	    <div class="review-category">
+	    <div class="review-category pt-5">
 	      <h2>Planned</h2>
+	      <hr />
 	      <div id="review-items-planned">
 	      </div>
 	    </div>
