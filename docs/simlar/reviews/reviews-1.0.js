@@ -1,35 +1,59 @@
-/* 
-
-// Example of completed review
-
-
-{
-"antecedent" : "alcohol",
-"consequent" : "cancer",
-"prospero" : "XYZ",
-"lead" : "XYZ",
-"contributors" : "ZYX",
-"publications" : [
-{
-"href" : "doi",
-"label" : "DOI link to published review"
-}
-],
-"existing" : [
-{
-"href" : "doi",
-"label" : "DOI link to existing review"
-}
-],
-"status" : "completed"
-},
-
-
-*/
 
 const reviews = [
 
     // -- Alcohol -> NCD, MHC
+    {
+	"antecedent" : "alcohol",
+	"consequent" : "cancer",
+	"lead" : "Marcus Bendtsen",
+	"contributors" : "",
+	"reviews" : [
+	    {
+		"estimand" : {
+		    "exposure" : "Weekly consumption",
+		    "outcome" : "Breast cancer"
+		},
+		"prospero" : "",
+		"publications" : "",
+		"status" : "ongoing"
+	    },
+	    {
+		"estimand" : {
+		    "exposure" : "Weekly consumption",
+		    "outcome" : "Colorectum cancer"
+		},
+		"prospero" : "",
+		"publications" : "",
+		"status" : "ongoing"
+	    },
+	    {
+		"estimand" : {
+		    "exposure" : "Weekly consumption",
+		    "outcome" : "Liver cancer"
+		},
+		"prospero" : "Not available",
+		"status" : "completed",
+		"publications" : [
+		    {
+			"href" : "Google.com",
+			"label" : "Test publication"
+		    }
+		]
+
+	    },
+	    {
+		"estimand" : {
+		    "exposure" : "Heavy episodic drinking",
+		    "outcome" : "Colorectum cancer"
+		},
+		"prospero" : "",
+		"publications" : "",
+		"status" : "tabled",
+		"comment" : "We could not find..."
+	    },
+	]
+    },
+
     {
 	"antecedent" : "alcohol",
 	"consequent" : "cvd",
@@ -39,13 +63,7 @@ const reviews = [
 	"publications" : "",
 	"status" : ""
     },
-    {
-	"antecedent" : "alcohol",
-	"consequent" : "cancer",
-	"prospero" : "",
-	"lead" : "",
-	"contributors" : ""
-    },
+
     {
 	"antecedent" : "alcohol",
 	"consequent" : "respiratory",
@@ -93,15 +111,16 @@ const reviews = [
 	"publications" : "",
 	"status" : "ongoing"
     },
+
     {
 	"antecedent" : "alcohol",
 	"consequent" : "sud",
-	"prospero" : "",
 	"lead" : "Gillian W. Shorter",
 	"contributors" : "",
-	"publications" : "",
+	"propsero" : "",
 	"status" : "ongoing"
     },
+
     {
 	"antecedent" : "alcohol_others",
 	"consequent" : "gad",

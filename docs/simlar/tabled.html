@@ -33,21 +33,21 @@
 
 	  //
 	  // -- Decide if this collection should be
-	  // -- rendered in completed.
+	  // -- rendered in tabled.
 	  //
-	  let any_completed = false;
+	  let any_tabled = false;
 	  for (const r in collection["reviews"]) {
 	      const review = collection["reviews"][r];
-	      if (review["status"] === "completed") {
-		  any_completed = true;
+	      if (review["status"] === "tabled") {
+		  any_tabled = true;
 		  break;
 	      }
 	  }
 
 	  // 
-	  // -- Do nothing if not any reviews in collection are completed
+	  // -- Do nothing if not any reviews in collection are tabled
 	  //
-	  if (!any_completed) {
+	  if (!any_tabled) {
 	      return;
 	  }
 
@@ -63,15 +63,14 @@
 	  //
 	  for (const r in collection["reviews"]) {
 	      const review = collection["reviews"][r];
-	      if (review["status"] === "completed") {
+	      if (review["status"] === "tabled") {
 		  $(container).append("<hr />");
 		  $(container).append(create_estimand(review));
-		  $(container).append(create_prospero(review));
-		  $(container).append(create_publications(review));
+		  $(container).append(create_comment(review));
 	      }
 	  }
 	  
-	  $("#review-items-completed").append(container);
+	  $("#review-items-tabled").append(container);
 	  
       }
 
@@ -93,26 +92,10 @@
 	  return div;
       }
       
-      function create_prospero(review) {
-	  return $("<p>").html("<strong>PROSPERO:</strong> " + review["prospero"]);
+      function create_comment(review) {
+	  return $("<p>").html(review["comment"]);
       }
       
-      function create_publications(review) {
-	  const div = $("<div><strong>Publications:</strong></div>");
-	  const pubs = $("<ul>");
-	  if ("publications" in review) {
-	      for (const p in review["publications"]) {
-		  const pub = review["publications"][p]
-		  const pub_link = $("<a target=_blank>").attr("href", pub["href"]).html(pub["label"]);
-		  const pub_item = $("<li>").append(pub_link);
-		  $(pubs).append(pub_item);
-
-	      }
-	      $(div).append(pubs);
-	      return div;
-	  }
-      }
-
       $(function() {
 	  
 	  for (const c in reviews) {
@@ -159,11 +142,12 @@
               <a class="nav-link" href="queries.html">Queries</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tabled.html">Tabled</a>
+              <a class="nav-link active" href="tabled.html">Tabled</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="completed.html">Completed</a>
+              <a class="nav-link" href="completed.html">Completed</a>
             </li>
+
             <!-- <li class="nav-item"> -->
               <!--   <a class="nav-link" href="flow.html">Flow diagrams</a> -->
               <!-- </li> -->
@@ -177,7 +161,7 @@
     <div style="background-image: url(../resources/img/simlar-background.jpg)" class="jumbotron bg-cover text-white header">
       <div class="py-5">
 	<div class="header-text">
-          <h1 class="display-4 font-weight-bold">Completed</h1>
+          <h1 class="display-4 font-weight-bold">Tabled</h1>
 	</div>
       </div>
     </div>
@@ -192,7 +176,7 @@
 
 
 	    <div class="review-category">
-	      <div id="review-items-completed">
+	      <div id="review-items-tabled">
 	      </div>
 	    </div>
 

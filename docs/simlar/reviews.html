@@ -18,9 +18,53 @@
 
     <script>
 
+      function create_collection(container, collection) {
+
+	  //
+	  // -- Decide if this collection should be
+	  // -- rendered in ongoing.
+	  //
+	  let any_ongoing = false;
+	  for (const r in collection["reviews"]) {
+	      const review = collection["reviews"][r];
+	      if (review["status"] === "ongoing") {
+		  any_ongoing = true;
+		  break;
+	      }
+	  }
+
+	  // 
+	  // -- Do nothing if not any reviews in collection are ongoing
+	  //
+	  if (!any_ongoing) {
+	      return;
+	  }
+
+	  //
+	  // -- Render first part of collection
+	  //
+	  $(container).append(create_title(collection));
+	  $(container).append(create_lead(collection));
+	  $(container).append(create_contributors(collection));
+
+	  //
+	  // -- Render each review in collection
+	  //
+	  for (const r in collection["reviews"]) {
+	      const review = collection["reviews"][r];
+	      if (review["status"] === "ongoing") {
+		  $(container).append("<hr />");		  
+		  $(container).append(create_estimand(review));
+		  $(container).append(create_prospero(review));
+	      }
+	  }
+	  
+	  $("#review-items-ongoing").append(container);
+	  
+      }
+
       function create_ongoing(container, review) {
 	  $(container).append(create_title(review));
-	  $(container).append(create_estimands(review));
 	  $(container).append(create_prospero(review));
 	  $(container).append(create_lead(review));
 	  $(container).append(create_contributors(review));
@@ -54,43 +98,38 @@
 	  return $("<p>").html("<strong>Contributors:</strong> " + review["contributors"]);
       }
 
-      function create_estimands(review) {
-	  const div = $("<div><strong>Estimands:</strong></div>");
-	  const estimands = $("<ul>");
-	  if ("estimands" in review) {
-	      for (e in review["estimands"]) {
-		  const est = review["estimands"][e]
-		  const est_p = $("<p>").html(est);
-		  const est_item = $("<li>").append(est_p);
-		  $(estimands).append(est_item);
-
-	      }
-	      $(div).append(estimands);
-	      return div;
-	  }
+      function create_estimand(review) {
+	  const div = $("<div><strong>Estimand: </strong>" + review["estimand"]["exposure"] + " &rArr; " + review["estimand"]["outcome"] + "</div>");
+	  return div;
       }
 
       
       $(function() {
 	  
-	  for (r in reviews) {
+	  for (const c in reviews) {
 
-	      review = reviews[r];
+	      const collection = reviews[c];
 	      
 	      const div = $("<div>");
 	      $(div).addClass("border border-light rounded");
 	      $(div).addClass("p-3").addClass("my-3");
-	      
- 	      if ("status" in review) {
-		  if (review["status"] == "ongoing") {
-		      create_ongoing(div, review);
-		  } else if (review["status"] == "prioritized") {
-                      create_prioritized(div, review);
-                  }
+
+	      if ("reviews" in collection) {
+		  create_collection(div, collection);
+		  
 	      } else {
-		  create_planned(div, review);
+		  const review = collection;
+ 		  if ("status" in review) {
+		      if (review["status"] == "ongoing") {
+			  create_ongoing(div, review);
+		      } else if (review["status"] == "prioritized") {
+			  create_prioritized(div, review);
+                      }
+		  } else {
+		      create_planned(div, review);
+		  }
+
 	      }
-	      
 	  }
 
       });
@@ -123,6 +162,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="queries.html">Queries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tabled.html">Tabled</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="completed.html">Completed</a>
