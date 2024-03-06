@@ -729,8 +729,8 @@ const reviews = [
     {
 	"antecedent" : "gad",
 	"consequent" : "diet",
-	"prospero" : "Elizabeth S. Collier",
-	"lead" : "",
+	"prospero" : "",
+	"lead" : "Elizabeth S. Collier",
 	"contributors" : "",
 	"publications" : "",
 	"status" : "ongoing"
