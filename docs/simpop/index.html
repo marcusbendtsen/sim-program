@@ -36,10 +36,11 @@
           <p>SIMPOP</p>
 	  <p>
 	    In this project, we will use Swedish national registries to define the initial state of the virtual cohorts and estimate conditional probabilities of life course events. 
-	    These life course events relate to household characteristics, education, employment, income trajectories, and sick leave.
+	    These life course events relate to education, household characteristics, employment, income trajectories, sick leave, and sickness- and rehabilitation benefits.
 	  </p>
 	  <p>
-	    <em>"Individual characteristics" is broadly defined as what is know about an individual, e.g. age, gender, education, current income, household characteristics, NCDs, MHCs, history of sick leave, etc.</em>
+	    In what follows, we use the word <i>characteristics</i> to mean an individual’s: age, sex, birth country, biological and non-biological parents’ birth country, educational level, disposable income, 
+	    (un)employment, retirement, household characteristics, and marital status.
 	  </p>
 	</div>
       </div>
@@ -47,43 +48,125 @@
     <div class="container-fluid">
       
       <div class="row">
-
 	<div class="col px-4">
 	  <div class="p-5 bg-body-tertiary">
 
             <h2>Household characteristics</h2>
 	    <hr />
 	    <ul>
-	      <li>Annual probability of two adult individuals getting married/divorced, conditional on both individuals' characteristics.</li>
-	      <li>Annual probability of two adult individuals sharing a household, conditional on both individuals' characteristics.</li>
-	      <li>Annual probability of adding a child to the household, conditional on parent('s') characteristics.</li>
-	      <li>Annual probability of child leaving the household, conditional on parent('s') and child's characteristics.</li>
+	      <li>Annual probability of two individuals getting married, conditional on both individuals’ characteristics.</li>
+	      <li>Annual probability of two married individuals getting divorced, conditional on both individuals’ characteristics.</li>
+	      <li>Annual probability of adding a child to the household, conditional on parent(‘s’) characteristics.</li>
+	      <li>Annual probability of child leaving the household, conditional on the child's and parent(‘s’) characteristics.</li>
 	    </ul>
 
             <h2 class="pt-5">Education and employment</h2>
 	    <hr />
 	    <ul>
-	      <li>Annual probability of obtaining an educational degree (primary, secondary, tertriary), conditional on the individual's and parents' characteristics. </li>
-	      <li>Annual probability of becoming unemployed conditional on the individual's characteristics.</li>
-	      <li>Annual probability of early- or disability pension conditional on the individual's characteristics.</li>
-	      <li>Annual probability of pension conditional on the individual's characteristics.</li>
+	      <li>Annual probability of obtaining an educational degree, conditional on the individual’s and parents’ characteristics.</li>
+	      <li>Annual probability of becoming employed (or changing employment), conditional on the individual’s and the family’s characteristics.</li>
+	      <li>Annual probability of becoming unemployed, conditional on the individual’s and the family’s characteristics.</li>
+	      <li>Annual probability of retirement, conditional on the individual’s and the family’s characteristics.</li>
+	    </ul>
+
+            <h2 class="pt-5">Sick leave and benefits</h2>
+	    <p>
+	      Note that a complete specification of relevant ICD-10 codes for the below two estimands can be found at the end of this document.
+	    </p>
+	    <hr />
+	    <ul>
+	      <li>Number of days of sickness and rehabilitation benefits due to a specific non-communicable disease or mental health disorder, conditional on the individual’s characteristics.</li>
+	      <li>Amount paid (sickness and rehabilitation benefits) and case management costs due to a specific non-communicable disease or mental health disorder, conditional on the individual’s characteristics.</li>
 	    </ul>
 
             <h2 class="pt-5">Income trajectories</h2>
 	    <hr />
-	    <ul>
-	      <li>Predicted lifetime income trajectory conditional on individual's characteristics.</li>
-	    </ul>
-	    
-            <h2 class="pt-5">Sick leave and benefits</h2>
-	    <hr />
-	    <ul>
-	      <li>Number of days of sickness and rehabilitation benefits conditional on specific NCD or MHC and the individual's other characteristics.</li>
-	      <li>Amount paid and case management costs conditional on specific NCD or MHC and the individual's other characteristics.</li>
-	    </ul>
+	    <p>
+	      Predicted income trajectory conditional on the individual’s and the family’s characteristics and on history of days with sickness and rehabilitation benefits.
+	    </p>
 	  </div>
 	</div>
-	
+      </div> <!-- Row -->
+
+      <div class="row">
+	<div class="col px-4">
+	  <div class="p-5 bg-body-tertiary">
+	    
+            <h2>ICD-10 codes</h2>
+	    <hr />
+
+	    <h3>Cardiovascular diseases</h3>
+	    <ul>
+	      <li>I10-I15 Hypertensive diseases</li>
+	      <li>I20-I25 Ischaemic heart diseases</li>
+	      <li>I26-I28 Pulmonary heart disease and diseases of pulmonary circulation</li>
+	      <li>I30-I52 Other forms of heart disease</li>
+	      <li>I60-I69 Cerebrovascular diseases</li>
+	      <li>I70-I79 Diseases of arteries, arterioles and capillaries</li>
+	      <li>I95-I97 Other and unspecified disorders of the circulatory system</li>
+	    </ul>
+
+	    <h3>Malignant neoplasms</h3>
+	    <ul>
+	      <li>C00-C14 Malignant neoplasms of lip, oral cavity and pharynx</li>
+	      <li>C15-C26 Malignant neoplasms of digestive organs</li>
+	      <li>C30-C39 Malignant neoplasms of respiratory and intrathoracic organs</li>
+	      <li>C40-C41 Malignant neoplasms of bone and articular cartilage</li>
+	      <li>C43-C44 Melanoma and other malignant neoplasms of skin</li>
+	      <li>C45-C49 Malignant neoplasms of mesothelial and soft tissue</li>
+	      <li>C50-C50 Malignant neoplasm of breast</li>
+	      <li>C51-C58 Malignant neoplasms of female genital organs</li>
+	      <li>C60-C63 Malignant neoplasms of male genital organs</li>
+	      <li>C64-C68 Malignant neoplasms of urinary tract</li>
+	      <li>C69-C72 Malignant neoplasms of eye, brain and other parts of central nervous system</li>
+	      <li>C73-C75 Malignant neoplasms of thyroid and other endocrine glands</li>
+	      <li>C76-C80 Malignant neoplasms of ill-defined, secondary and unspecified sites</li>
+	      <li>C81-C96 Malignant neoplasms, stated or presumed to be primary, of lymphoid, haematopoietic and related tissue</li>
+	      <li>C97-C97 Malignant neoplasms of independent (primary) multiple sites</li>
+	      <li>D00-D09 In situ neoplasms</li>
+	      <li>D10-D36 Benign neoplasms</li>
+	      <li>D37-D48 Neoplasms of uncertain or unknown behaviour</li>
+	    </ul>
+
+	    <h3>Chronic respiratory diseases</h3>
+	    <ul>
+	      <li>J40-J47 Chronic lower respiratory diseases</li>
+	      <li>J80-J84 Other respiratory diseases principally affecting the interstitium</li>
+	      <li>J85-J86 Suppurative and necrotic conditions of lower respiratory tract</li>
+	      <li>J90-J94 Other diseases of pleura</li>
+	      <li>J95-J99 Other diseases of the respiratory system</li>
+	    </ul>
+
+	    <h3>Diabetes and metabolic diseases</h3>
+	    <ul>
+	      <li>E10-E14 Diabetes mellitus</li>
+	      <li>E15-E16 Other disorders of glucose regulation and pancreatic internal secretion</li>
+	      <li>E20-E35 Disorders of other endocrine glands</li>
+	      <li>E40-E46 Malnutrition</li>
+	      <li>E50-E64 Other nutritional deficiencies</li>
+	      <li>E65-E68 Obesity and other hyperalimentation</li>
+	      <li>E70-E90 Metabolic disorders</li>
+	    </ul>
+
+	    <h3>Liver diseases and digestive diseases</h3>
+	    <ul>
+	      <li>K65-K67 Diseases of peritoneum</li>
+	      <li>K70-K77 Diseases of liver</li>
+	      <li>K80-K87 Disorders of gallbladder, biliary tract and pancreas</li>
+	    </ul>
+
+	    <h3>Mental and behavioral disorders</h3>
+	    <ul>
+	      <li>F10-F19 Mental and behavioural disorders due to psychoactive substance use</li>
+	      <li>F20-F29 Schizophrenia, schizotypal and delusional disorders</li>
+	      <li>F30-F39 Mood [affective] disorders</li>
+	      <li>F40-F48 Neurotic, stress-related and somatoform disorders</li>
+	      <li>F50-F59 Behavioural syndromes associated with physiological disturbances and physical factors</li>
+	      <li>F99-F99 Unspecified mental disorder</li>
+	    </ul>
+
+	  </div>
+	</div>
       </div> <!-- Row -->
       
       
