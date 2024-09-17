@@ -1,7 +1,69 @@
 
 const reviews = [
 
-    // -- Alcohol -> NCD, MHC
+    // -- Fruit and vegetables -> Cancers
+    {
+	"antecedent" : "fruitveg",
+	"consequent" : "cancer",
+	"prospero" : "",
+	"lead" : "Dongni Zhang",
+	"contributors" : "",
+	"reviews" : [
+	    {
+		"estimand" : {
+		    "exposure" : "Average daily fruit and vegetable consumption",
+		    "outcome" : "Colorectum cancer"
+		},
+		"prospero" : "",
+		"publications" : "",
+		"status" : "ongoing"
+	    },
+	    {
+		"estimand" : {
+		    "exposure" : "Average daily fruit and vegetable consumption",
+		    "outcome" : "Breast cancer"
+		},
+		"prospero" : "",
+		"publications" : "",
+		"status" : "ongoing"
+	    }
+	]
+
+    },
+
+    // -- Physical activity -> Cancers
+    {
+	"antecedent" : "pa",
+	"consequent" : "cancer",
+	"prospero" : "",
+	"lead" : "Dongni Zhang",
+	"contributors" : "",
+	"reviews" : [
+	    {
+		"estimand" : {
+		    "exposure" : "Moderate to vigorous physical activity per week",
+		    "outcome" : "Colorectum cancer"
+		},
+		"prospero" : "",
+		"publications" : "",
+		"status" : "ongoing"
+	    },
+	    {
+		"estimand" : {
+		    "exposure" : "Moderate to vigorous physical activity per week",
+		    "outcome" : "Breast cancer"
+		},
+		"prospero" : "",
+		"publications" : "",
+		"status" : "ongoing"
+	    }
+	]
+
+    },
+
+
+
+    // -- Alcohol -> Cancers
     {
 	"antecedent" : "alcohol",
 	"consequent" : "cancer",
@@ -32,7 +94,7 @@ const reviews = [
 		    "outcome" : "Liver cancer"
 		},
 		"prospero" : "Not available",
-		"status" : "completed",
+		//"status" : "completed",
 		"publications" : [
 		    {
 			"href" : "Google.com",
@@ -48,11 +110,14 @@ const reviews = [
 		},
 		"prospero" : "",
 		"publications" : "",
-		"status" : "tabled",
+		//"status" : "tabled",
 		"comment" : "We could not find..."
 	    },
 	]
     },
+
+
+
 
     {
 	"antecedent" : "alcohol",
@@ -166,14 +231,6 @@ const reviews = [
     },
     {
 	"antecedent" : "diet",
-	"consequent" : "cancer",
-	"prospero" : "",
-	"lead" : "",
-	"contributors" : "",
-	"publications" : ""
-    },
-    {
-	"antecedent" : "diet",
 	"consequent" : "respiratory",
 	"prospero" : "",
 	"lead" : "",
@@ -271,14 +328,6 @@ const reviews = [
     {
 	"antecedent" : "pa",
 	"consequent" : "cvd",
-	"prospero" : "",
-	"lead" : "",
-	"contributors" : "",
-	"publications" : ""
-    },
-    {
-	"antecedent" : "pa",
-	"consequent" : "cancer",
 	"prospero" : "",
 	"lead" : "",
 	"contributors" : "",

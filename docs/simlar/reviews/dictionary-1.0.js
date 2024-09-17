@@ -3,6 +3,7 @@ const dictionary = {
 
     "alcohol" : "Alcohol",
     "diet" : "Diet",
+    "fruitveg" : "Fruit and vegetables",
     "pa" : "Physical activity",
     "smoking" : "Smoking",
 
